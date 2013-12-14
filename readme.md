@@ -8,6 +8,6 @@
 
 * $ chmod -R 777 app/storage
 
-* localhost/laravel4-Bootstrap3-Starter sayfasını kontrol et
+* localhost/laravel4-Bootstrap3-Starter/public sayfasını kontrol et
 
 ![](/public/assets/img/screenshot.png "Home")
