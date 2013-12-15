@@ -18,11 +18,14 @@
 
 * E-mail: `admin@admin.com` , Password: `admin`
 
-![](/public/assets/img/screenshot.png "Home")
-
+###Login
 ![](/public/assets/img/login.png "Login")
 
+###Register
 ![](/public/assets/img/register.png "Register")
 
+###Profile
 ![](/public/assets/img/profil.png "Profile")
 
+###Home
+![](/public/assets/img/screenshot.png "Home")
