@@ -10,7 +10,7 @@
 
 * `app/config/database.php` dosyasını kendinize göre güncelleyin.
 
-* $ php artisan migrate
+* ``` $ php artisan migrate ```
 
 * $ php artisan db:seed 
 
