@@ -1,8 +1,7 @@
-@extends('layout')
+@extends('layout.layout')
 
 @section('title')
-  mctr
-@parent
+  Anasayfa
 @stop
 
 @section('content')

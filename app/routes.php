@@ -11,12 +11,15 @@
 |
 */
 
-Route::get('hello', function()
-{
-	return View::make('hello');
-});
+Route::get('hello', 'HomeController@showWelcome');
+Route::get('/', 'HomeController@getIndex');
+Route::get('login', 'HomeController@getLogin');
+Route::post('login', 'HomeController@postLogin');
+Route::get('home', 'HomeController@getHome');
+Route::get('register', 'HomeController@getRegister');
+Route::post('register', 'HomeController@postRegister');
+Route::get('logout', 'HomeController@logout');
 
-Route::get('/', function()
-{
-	return View::make('index');
+Route::group(array('before' => 'auth'), function(){
+	Route::get('admin', 'AdminController@getIndex');
 });
