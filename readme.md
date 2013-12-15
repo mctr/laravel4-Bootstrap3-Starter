@@ -8,6 +8,14 @@
 
 * $ chmod -R 777 app/storage
 
-* localhost/laravel4-Bootstrap3-Starter/public sayfasını kontrol et
+* `app/config/database.php` dosyasını kendinize göre güncelleyin.
+
+* $ php artisan migrate
+
+* $ php artisan db:seed 
+
+* localhost/laravel4-Bootstrap3-Starter/public/index.php sayfasını kontrol et
+
+* E-mail: admin@admin.com , Password: admin
 
 ![](/public/assets/img/screenshot.png "Home")
