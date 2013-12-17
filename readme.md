@@ -21,8 +21,14 @@
 ###Login
 ![](/public/assets/img/login.png "Login")
 
+###Login _Error
+![](/public/assets/img/login_error.png "Login_Error")
+
 ###Register
 ![](/public/assets/img/register.png "Register")
+
+###Register_Error
+![](/public/assets/img/register_error.png "Register_Error")
 
 ###Profile
 ![](/public/assets/img/profil.png "Profile")
