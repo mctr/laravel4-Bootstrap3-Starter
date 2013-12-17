@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('hello', 'HomeController@showWelcome');
 Route::get('/', 'HomeController@getIndex');
 Route::get('login', 'HomeController@getLogin');

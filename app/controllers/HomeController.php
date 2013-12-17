@@ -33,13 +33,13 @@ class HomeController extends BaseController {
 	public function postLogin()
 	{
 		$input = Input::all();
-		$rules = array('email' => 'required', 'password' => 'required');
+		$rules = array('email' => 'required|email', 'password' => 'required');
 		
 		$validate = Validator::make($input, $rules);
 		
 		if($validate->fails())
 		{
-			return Redirect::to('login')->withErrors($validate);
+			return Redirect::to('login')->with('message', 'Hatalı veya Eksik bilgi girdiniz.');   //withErrors($validate);
 		} else {
 			$credentials = array('email' => $input['email'], 'password' => $input['password']);
 			
@@ -72,20 +72,20 @@ class HomeController extends BaseController {
 		
 		if ($validate->passes())
 		{
-			$password = $input['password'];
-			$password = Hash::make($password);
+			//~ $password = $input['password'];
+			//~ $password = Hash::make($password);
 			
 			$user = new User();
 			$user->firstname = $input['firstname'];
 			$user->lastname = $input['lastname'];
 			$user->email = $input['email'];
-			$user->password = $password;
+			$user->password = $input['password'];
 			$user->save();
 			
 			return Redirect::to('login');			
 		} else {
-			return Redirect::to('register')->withInput()->withErrors($validate);
-		}
+			return Redirect::to('register')->with('message', 'Eksik Bilgi girdiniz!'); //withErrors($validate)->withInput();
+		}	
 	}
 	
 	public function logout()

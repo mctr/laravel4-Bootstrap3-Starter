@@ -38,6 +38,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 		return $this->password;
 	}
+	
+	public function setPasswordAttribute($value)
+	{
+		$this->attributes['password'] = Hash::make($value);
+	}
 
 	/**
 	 * Get the e-mail address where password reminders are sent.
