@@ -104,11 +104,8 @@
     
     {{ HTML::script('assets/js/bootstrap.js') }}
     {{ HTML::script('assets/js/bootstrap.min.js') }}
-    {{ HTML::script('assets/js/dropdowns.js') }}
-    {{ HTML::script('assets/js/jquery.min.js') }}
-    {{ HTML::script('assets/js/jquery-1.10.2.min.js') }}
-    
-    
+    {{ HTML::script('assets/js/jquery-1.7.2.min.js') }}
+    {{ HTML::script('assets/js/dropdowns.js') }}    
     
 
     @yield('scripts')

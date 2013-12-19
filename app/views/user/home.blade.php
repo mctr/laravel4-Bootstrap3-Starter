@@ -19,5 +19,9 @@
 
 <div class="col-md-6 col-md-offset-3 well">
 	<h1>Dostum Login oldun.</h1>
+	<h3> E-mail : {{ Auth::user()->email }}</h3>
+	<h3> id : {{ Auth::user()->id }}</h3>
+	<h3> Adı : {{ Auth::user()->firstname }}</h3>
+	<h3> Soyadı : {{ Auth::user()->lastname }}</h3>
 </div>
 @stop

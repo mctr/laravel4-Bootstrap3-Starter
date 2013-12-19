@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('upload', function()
+{
+	return View::make('user.upload');
+});
 
 Route::get('hello', 'HomeController@showWelcome');
 Route::get('/', 'HomeController@getIndex');
